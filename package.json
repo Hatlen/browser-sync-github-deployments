@@ -1,0 +1,37 @@
+{
+  "name": "start-browser-sync-with-herokuapp",
+  "version": "1.0.0",
+  "description": "A listing page with your heroku apps and an action to start browsersync with one of those apps",
+  "main": "index.js",
+  "repository": "https://github.com/Hatlen/start-browser-sync-with-herokuapp",
+  "author": "Trond Fröding <trondfroding@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@octokit/rest": "^16.8.1",
+    "babel-loader": "^8.0.5",
+    "body-parser": "^1.18.3",
+    "browser-sync": "^2.26.3",
+    "css-loader": "^2.1.0",
+    "debug": "^4.1.1",
+    "dotenv-flow": "^0.2.0",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "http-cors": "^1.0.2",
+    "node-fetch": "^2.3.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "start": "yarn run build && node index.js",
+    "start:dev": "webpack-dev-server & node index.js",
+    "start:debug": "yarn run build && node --inspect-brk index.js",
+    "build": "webpack"
+  },
+  "devDependencies": {}
+}

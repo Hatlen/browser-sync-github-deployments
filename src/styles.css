@@ -1,0 +1,21 @@
+body {
+  background: white;
+  font-family: helvetica, arial, sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+li.active {
+  background: green;
+  color: white;
+}
+li.loading {
+  opacity: 0.2;
+}
